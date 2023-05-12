@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  frontend:
+    hostname: frontend
+    build: .
+    ports:
+      - "80:80"

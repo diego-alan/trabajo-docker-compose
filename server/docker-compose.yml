@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  backend:
+    hostname: backend
+    command: python manage.py runserve 0.0.0.0:5001
+    build: .
+    image: backend:1.0
+    ports:
+      - "5001:5000"
